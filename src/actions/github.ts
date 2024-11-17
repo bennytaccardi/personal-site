@@ -5,7 +5,7 @@ import { GitHubRepo } from "@/types/github-repo";
 export async function retrieveGHRepos(): Promise<GitHubRepo[]> {
   const response = await fetch("https://api.github.com/user/starred", {
     headers: {
-      Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+      Authorization: `token ${process.env.GITHUB_TOKEN}`,
     },
   });
 
@@ -14,12 +14,12 @@ export async function retrieveGHRepos(): Promise<GitHubRepo[]> {
     repos.map(async (repo: GitHubRepo) => {
       const responseStars = await fetch(repo.stargazers_url, {
         headers: {
-          Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+          Authorization: `token ${process.env.GITHUB_TOKEN}`,
         },
       });
       const responseLanguages = await fetch(repo.languages_url, {
         headers: {
-          Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+          Authorization: `token ${process.env.GITHUB_TOKEN}`,
         },
       });
       const languages = await responseLanguages.json();
