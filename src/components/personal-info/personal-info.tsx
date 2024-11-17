@@ -85,10 +85,10 @@ export default function PersonalInfo({ isScrolled }: { isScrolled: boolean }) {
           }`}
         >
           <h2 className="text-sm sm:text-base md:text-lg">
-            Hey folks! My name is Benny (Benito) Taccardi and I'm a backend and
-            full-stack software engineer with a passion in learning new tech
-            stuff. Currently, I'm involved in backend software engineering at
-            Unobravo, where I use NodeJS. My main role is to develop complex
+            Hey folks! My name is Benny (Benito) Taccardi and I&apos;m a backend
+            and full-stack software engineer with a passion in learning new tech
+            stuff. Currently, I&apos;m involved in backend software engineering
+            at Unobravo, where I use NodeJS. My main role is to develop complex
             cloud backend architectures using various AWS services. Over the
             past few years, I worked on full-stack systems using Java
             (SpringBoot), Python (FastAPI), Angular, React and Docker as part of
