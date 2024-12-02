@@ -59,10 +59,10 @@ export default function Page() {
                 isScrolled ? "mt-0" : "mt-4"
               }`}
             >
+              <CVDownload />
               {/* <Contact /> */}
               <Career />
               <Portfolio />
-              <CVDownload />
             </div>
           </div>
         </main>
