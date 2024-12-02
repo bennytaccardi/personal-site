@@ -73,7 +73,10 @@ export default function PersonalInfo({ isScrolled }: { isScrolled: boolean }) {
               transition-all duration-400
               ${isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"}`}
             >
-              Short personal description of what I do in my daily job
+              Hi folks! I&apos;m an skilled backend software engineer with 4+
+              professional years of experience in cloud architecture, API
+              optimization, and high-performance system development using
+              several top-notch technologies like AWS and Node.js.
             </p>
             {isScrolled ? (
               <Contact className="opacity-0 h-0 overflow-hidden" />
@@ -91,14 +94,20 @@ export default function PersonalInfo({ isScrolled }: { isScrolled: boolean }) {
           }`}
         >
           <h2 className="text-sm sm:text-base md:text-lg">
-            Hey folks! My name is Benny (Benito) Taccardi and I&apos;m a backend
-            and full-stack software engineer with a passion in learning new tech
-            stuff. Currently, I&apos;m involved in backend software engineering
-            at Unobravo, where I use NodeJS. My main role is to develop complex
-            cloud backend architectures using various AWS services. Over the
-            past few years, I worked on full-stack systems using Java
-            (SpringBoot), Python (FastAPI), Angular, React and Docker as part of
-            my technological stack.
+            Hi, I&apos;m Benito Taccardi, a backend software engineer currently
+            working at Unobravo, where I craft high-performance, scalable
+            systems to enhance application functionality. With over four years
+            of experience, I&apos;ve contributed to diverse projects, like
+            optimizing APIs to cut response times by 90% and boosting therapist
+            recruitment by 20% through targeted feature development. I&apos;ve
+            also delivered innovative solutions for European research projects
+            and implemented fraud detection algorithms for banking clients. My
+            expertise spans AWS, Node.js, and TypeScript, and I thrive on
+            creating multi-layered architectures and streamlining CI/CD
+            pipelines. Whether it&apos;s improving uptime, reducing latency, or
+            driving impactful results, I&apos;m passionate about building
+            systems that make a difference. Let&apos;s connect and create
+            something extraordinary!
           </h2>
         </div>
       </div>

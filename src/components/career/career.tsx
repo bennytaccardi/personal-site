@@ -4,40 +4,77 @@ import { Calendar, Briefcase, GraduationCap } from "lucide-react";
 export default function Career() {
   const careerEntries = [
     {
-      year: "2024",
-      role: "Senior Software Engineer",
-      company: "Tech Innovation Labs",
+      year: "2023 - ongoing",
+      role: "Backend Engineer",
+      company: "Unobravo srl",
+      url: "https://www.unobravo.com",
       description:
-        "Leading development of cloud-native applications and mentoring junior developers. Specialized in distributed systems and microservices architecture.",
+        "At Unobravo, I design scalable systems, optimize APIs, and enhance application performance, achieving up to 90% faster response times and boosting therapist recruitment by 20%.",
       icon: <Briefcase className="w-6 h-6" />,
-      skills: ["Cloud Architecture", "Team Leadership", "System Design"],
+      skills: [
+        "Cloud Architecture",
+        "System Design",
+        "Backend development",
+        "AWS",
+        "Node.js",
+        "GraphQL",
+        "Typescript",
+        "Pulumi",
+        "Terraform",
+        "GitHub actions",
+      ],
     },
     {
-      year: "2022",
+      year: "2021 - 2022",
       role: "Software Engineer",
-      company: "Digital Solutions Inc",
+      company: "Engineering S.p.A.",
+      url: "https://www.eng.it/",
       description:
-        "Developed full-stack applications using React and Node.js. Implemented CI/CD pipelines and improved application performance by 40%.",
+        "In my engineering experience, I delivered innovative solutions for European research projects, optimized geospatial tools, and reduced bug tickets by 30% using IaC and version control.",
       icon: <Briefcase className="w-6 h-6" />,
-      skills: ["React", "Node.js", "DevOps"],
+      skills: [
+        "System Design",
+        "Fullstack development",
+        "Ansible",
+        "Python (FastAPI)",
+        "Java (SpringBoot)",
+        "Geoserver",
+        "Apache Superset",
+      ],
     },
     {
-      year: "2020",
-      role: "Junior Developer",
-      company: "StartUp Ventures",
+      year: "2020-2021",
+      role: "Software Developer",
+      company: "Vidyasoft s.r.l",
+      url: "https://www.vidyasoft.it/",
       description:
-        "Built and maintained web applications. Collaborated with design team to implement responsive user interfaces.",
+        "At Vidyasoft, I developed backend solutions for banking clients, implemented a fraud detection algorithm, and boosted company revenue by 12% while increasing banking partnerships by 60%.",
       icon: <Briefcase className="w-6 h-6" />,
-      skills: ["JavaScript", "HTML/CSS", "Git"],
+      skills: [
+        "Backend development",
+        "AI/ML",
+        "Java",
+        "Python",
+        "PyTorch",
+        "Deep Neural Networks",
+        "Angular",
+      ],
     },
     {
-      year: "2019",
-      role: "Computer Science Degree",
-      company: "Tech University",
-      description:
-        "Bachelor's degree in Computer Science with focus on software engineering and artificial intelligence.",
+      year: "2019-2021",
+      role: "Computer Engineering Master's Degree",
+      company: "University of Salento",
+      description: "",
       icon: <GraduationCap className="w-6 h-6" />,
-      skills: ["Algorithms", "Data Structures", "Machine Learning"],
+      skills: [],
+    },
+    {
+      year: "2015-2019",
+      role: "Computer Engineering Bachelor's Degree",
+      company: "University of Salento",
+      description: "",
+      icon: <GraduationCap className="w-6 h-6" />,
+      skills: [],
     },
   ];
   return (
@@ -67,7 +104,12 @@ export default function Career() {
 
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold">{entry.role}</h3>
-                  <p className="text-sm text-white/70 mt-1">{entry.company}</p>
+                  <a href={entry.url} target="_blank">
+                    <p className="text-sm text-white/70 mt-1">
+                      {entry.company}
+                      {entry.icon}
+                    </p>
+                  </a>
                   <p className="mt-2 text-white/80">{entry.description}</p>
 
                   {/* Skills tags */}
