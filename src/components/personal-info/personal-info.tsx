@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Contact from "../contact/contact";
 
 export default function PersonalInfo({ isScrolled }: { isScrolled: boolean }) {
   return (
@@ -6,7 +7,7 @@ export default function PersonalInfo({ isScrolled }: { isScrolled: boolean }) {
       className={`transition-all duration-400 flex-none p-4
         ${
           isScrolled
-            ? "h-[10vh] sm:h-[12vh] md:h-[10vh]"
+            ? "h-[12vh] sm:h-[14vh] md:h-[12vh]"
             : "h-auto sm:h-[30vh] md:h-[35vh]"
         }`}
     >
@@ -74,6 +75,11 @@ export default function PersonalInfo({ isScrolled }: { isScrolled: boolean }) {
             >
               Short personal description of what I do in my daily job
             </p>
+            {isScrolled ? (
+              <Contact className="opacity-0 h-0 overflow-hidden" />
+            ) : (
+              <Contact />
+            )}
           </div>
         </div>
 

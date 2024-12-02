@@ -5,6 +5,7 @@ import Career from "@/components/career/career";
 import PersonalInfo from "@/components/personal-info/personal-info";
 import Portfolio from "@/components/portfolio/portfolio";
 import SpotlightBackground from "@/components/ui/spotlight-background";
+import CVDownload from "@/components/cvdownload/cvdownload";
 
 export default function Page() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,8 +59,10 @@ export default function Page() {
                 isScrolled ? "mt-0" : "mt-4"
               }`}
             >
+              {/* <Contact /> */}
               <Career />
               <Portfolio />
+              <CVDownload />
             </div>
           </div>
         </main>
