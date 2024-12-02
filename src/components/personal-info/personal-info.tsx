@@ -73,10 +73,8 @@ export default function PersonalInfo({ isScrolled }: { isScrolled: boolean }) {
               transition-all duration-400
               ${isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"}`}
             >
-              Hi folks! I&apos;m an skilled backend software engineer with 4+
-              professional years of experience in cloud architecture, API
-              optimization, and high-performance system development using
-              several top-notch technologies like AWS and Node.js.
+              I craft scalable, high-performance backend solutions and seamless
+              cloud architectures.
             </p>
             {isScrolled ? (
               <Contact className="opacity-0 h-0 overflow-hidden" />
@@ -90,24 +88,22 @@ export default function PersonalInfo({ isScrolled }: { isScrolled: boolean }) {
         <div
           className={`w-full md:w-1/2 transition-all duration-400
           ${
-            isScrolled ? "opacity-0 h-0 overflow-hidden p-0" : "opacity-100 p-4"
+            isScrolled
+              ? "opacity-0 h-0 overflow-hidden p-0"
+              : "opacity-100 p-4 md:mt-16" // Added md:mt-16 to move it lower
           }`}
         >
           <h2 className="text-sm sm:text-base md:text-lg">
             Hi, I&apos;m Benito Taccardi, a backend software engineer currently
-            working at Unobravo, where I craft high-performance, scalable
-            systems to enhance application functionality. With over four years
-            of experience, I&apos;ve contributed to diverse projects, like
-            optimizing APIs to cut response times by 90% and boosting therapist
-            recruitment by 20% through targeted feature development. I&apos;ve
-            also delivered innovative solutions for European research projects
-            and implemented fraud detection algorithms for banking clients. My
-            expertise spans AWS, Node.js, and TypeScript, and I thrive on
-            creating multi-layered architectures and streamlining CI/CD
-            pipelines. Whether it&apos;s improving uptime, reducing latency, or
-            driving impactful results, I&apos;m passionate about building
-            systems that make a difference. Let&apos;s connect and create
-            something extraordinary!
+            working at Unobravo, where I build high-performance, scalable
+            systems to enhance functionality. With over four years of
+            experience, I&apos;ve optimized APIs to cut response times by 90%,
+            boosted therapist recruitment by 20%, and contributed to European
+            research projects. I&apos;ve also implemented fraud detection
+            algorithms for banking clients. Skilled in AWS, Node.js, and
+            TypeScript, I thrive on creating efficient architectures and
+            streamlining CI/CD pipelines, always aiming to deliver impactful
+            results.
           </h2>
         </div>
       </div>
